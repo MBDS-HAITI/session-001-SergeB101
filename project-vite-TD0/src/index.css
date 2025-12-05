@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
-
+/*
 * {
   box-sizing: border-box;
 }
@@ -147,4 +147,34 @@ main h2 {
 
 #tab-content code {
   font-size: 1rem;
+}
+*/
+
+/*la page doit prendre toute la hauteur */
+html, body, #root {
+  height: 100%;
+}
+
+/* Le conteneur principal en flex column */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f9fafb;
+}
+
+/* Main prend la place disponible */
+.main {
+  flex: 1;
+  padding: 24px;
+}
+
+/* Footer collé en bas et centré */
+.footer {
+  margin-top: auto; /* pousse le footer en bas */
+  text-align: center;
+  padding: 12px 16px;
+  color: #4b5563;
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
 }
