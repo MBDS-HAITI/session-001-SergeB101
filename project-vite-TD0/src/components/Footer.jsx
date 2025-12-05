@@ -2,9 +2,10 @@
 import React from "react";
 
 function Footer() {
+    const year = new Date().getFullYear(); // année dynamique
   return (
     <footer className="footer">
-      Tous droits réservés - Serge Beauboeuf
+      © {year} - Serge.Beauboeuf, Tous droits réservés.
     </footer>
   );
 }
